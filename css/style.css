@@ -1,0 +1,423 @@
+body{
+	background-color: #333;
+    margin: 0;
+}
+
+@-webkit-keyframes spin{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes lefrig{
+    from{
+        margin-left:20%;
+    }
+
+    to{
+        margin-left:40%;
+    }
+}
+
+#lr{
+    margin-left: 500px;
+    width: 240px;
+    -webkit-animation-name: lefrig; 
+    -webkit-animation-duration: 3.5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes fade{
+    0%  {color: #fff;}
+    50% {color: #ffabbb;}
+    100%{color: #333;}
+}
+
+h2{
+	text-align: center;
+	font-family: courier;
+	font-size: 36px;
+    color: #ffabbb;
+    cursor: default;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    -webkit-animation-name: fade; 
+    -webkit-animation-duration: .5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+/*@-webkit-keyframes plse{
+    from {
+        color: #ffabbb;
+    }
+    to { 
+        color: #fff;
+    }
+}
+
+.pulse{
+    float: left;
+    -webkit-animation-name: plse; 
+    -webkit-animation-duration: .15s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}*/
+
+h3{
+    font-family: courier;
+    margin-right: 40px;
+    margin-left: 10px;
+    color: white;
+}
+
+p{
+	font-family: courier;
+	margin-right: 40px;
+	margin-left: 10px;
+    color: white;
+    background-color:#ffabbb;
+
+}
+
+#cont{
+    width:76%;
+    /*max-width: 1200px;*/
+    left:0;
+    text-align: justify;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #ffabbb;
+    -webkit-animation-name: fade; 
+    -webkit-animation-duration: .6s; 
+    -webkit-animation-iteration-count: 1;
+
+}
+
+@-webkit-keyframes pop_rep {
+    from {
+        font-size: 21px;
+        width: 200px;
+    }
+    to { 
+        font-size: 22px;
+        width: 207px;  
+    }
+}
+
+
+.reply{
+    display: none;
+    position: fixed;
+    background-color: #333;
+    font-weight: bold;
+    font-size: 22px;
+    width: 210px;
+    text-align: center;
+    right: 2.7%;
+    bottom: 45.5%;
+    transform: rotate(2deg);
+    -webkit-animation-name: pop_rep; 
+    -webkit-animation-duration: .2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes pop {
+    from {
+        height: 135px;
+        width: 220px;
+    }
+    to { 
+        height: 141px;
+        width: 227px;
+    }
+}
+
+#say {
+    display: none;
+    position: fixed;
+    height: 135px;
+    width: 220px;
+    right: 4.5%;
+    bottom: 42%;
+    z-index: 34;
+    cursor: none;
+    transform: rotate(-9deg);
+    -webkit-animation-name: pop; 
+    -webkit-animation-duration: .2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes angr {
+    from {
+        height: 44%;
+    }
+    to { 
+        height: calc(44% + 9px);
+    }
+}
+
+#cool {
+	position: fixed;
+	height: 46%;
+    /*width: 15%;*/
+    right: 0%;
+	bottom: 5px;
+    z-index: 33;
+    cursor: pointer;
+	/*background-color: #ffabbb;*/
+    -webkit-animation-name: angr; 
+    -webkit-animation-duration: .7s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+}
+
+/*#cool:hover{
+	-webkit-animation-name: spin; 
+    -webkit-animation-duration: 0.5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: reverse;
+}*/
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    background-color: #333;
+    left: 76%;
+    top: 94px;
+    width: 383px;
+    padding: 0;
+    
+}
+
+li {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    width: default;
+    font-family: courier;
+    color: white;
+    text-align: left;
+    padding-left: 5px;
+    background-color: #333;
+    /*border-left: 2px solid white;*/
+    border-bottom: 2px solid #ffabbb;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    text-transform: none;
+    font-style: inherit;
+    color: white;
+}
+
+@keyframes bulse{
+    from {color: #ff90a6;}
+    to {color: #fdd7de;}
+}
+
+li a:hover{
+    animation-name: bulse;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+#cont div{
+    border-left: 1px solid #fff;
+    margin-left: 30px;
+}
+
+#botf{
+    height: 160px;
+    width: inherit;
+    position: relative;
+    margin: 0;
+    border:0;
+    text-align: center;
+}
+
+@-webkit-keyframes round {
+    0%{
+        top:130px;
+        right: 574px;
+    }
+    25%{
+        top:0px;
+        right: 574px;
+    }
+    50%{
+        top:0px;
+        right: -530px;
+    }
+    75%{
+        top:130px;
+        right: -530px;
+    }
+    100%{
+        top:130px;
+        right: 574px;
+    }
+}
+
+#wghts{
+    display: none;
+    position: relative;
+    top: 130px;
+    display: inline-block;
+    background-color: #333;
+    width: 23px;
+    height: 23px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    -webkit-animation-name: round; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@media screen and (max-width: 1300px) {
+
+    body{
+        background-color: white;
+    }
+
+    #cool{
+        display: none;
+    }
+    #say{
+        visibility: hidden;
+    }
+    .reply{
+        visibility: hidden;
+    }
+    ul{
+        position: static;
+        margin-right: 30px;
+        margin-bottom: 4px; 
+        background-color: white;
+        color: #333;
+    }
+    li{
+        background-color: white;
+        color: #333;
+    }
+    li a{
+        background-color: white;
+        color: #ffabbb;
+    }
+
+    @-webkit-keyframes vlip{
+        from{
+            transform: rotateY(-30deg);
+        }
+        to{
+            transform: rotateY(30deg);
+        }
+    }
+
+    #lr{
+        position:static;
+        float: right;
+        top: 210px;
+        width: 420px;
+        text-align: right;
+        margin: 0;
+        /*background-color: white;*/
+        -webkit-animation-name: vlip; 
+        -webkit-animation-duration: 1s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: linear;
+    }
+    h2{
+        color: #ffabbb;
+        /*-webkit-transform: rotate(180deg);*/
+        -webkit-animation-name: paused;
+        /*animation-play-state: paused;*/
+    }
+    #cont{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-height: 690px) {
+
+    #cool{
+        display: none;
+    }
+    #say{
+        visibility: hidden;
+    }
+    .reply{
+        visibility: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    #lr{
+        position: static;
+        float: none;
+        margin-left: auto;
+        margin-right: auto
+    }
+    ul{
+        display: none;
+    }
+    /*ul{
+        width: 100%;
+        margin-bottom: 130px;
+        position: static;
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        background-color: #333;
+
+    }
+    li{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: auto;
+        background-color: #333;
+        font-size: 29px;
+        float: left;
+        padding-right: 5px;
+        border-bottom:0;
+        border-right: 3px solid #ffabbb;
+    }
+    li a{
+        background-color: #333;
+        color: white;
+    }*/
+}
+
+
+
+/*"width:94px;
+width:134px;
+width:212px;
+width:242px;
+*/
